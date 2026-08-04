@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automotive DMS — Case Study — Pekka Toppi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- RAIL (desktop sidebar) -->
+  <aside class="rail" aria-label="Site navigation">
+    <div class="rail__top">
+      <a class="rail__brand" href="index.html">Pekka Toppi</a>
+      <nav class="rail__nav" aria-label="Primary">
+        <a class="rail__nav-link" href="index.html">Home</a>
+        <a class="rail__nav-link" href="index.html#work">Work</a>
+        <a class="rail__nav-link" href="index.html#about">About</a>
+        <a class="rail__nav-link" href="cv.html">CV</a>
+      </nav>
+    </div>
+    <div class="rail__footer">
+      <div class="rail__footer-divider"></div>
+      <div class="rail__footer-title">Case study</div>
+      <div>Automotive DMS</div>
+    </div>
+  </aside>
+
+  <!-- MOBILE HEADER -->
+  <header class="mobile-header" aria-label="Site header">
+    <a class="mobile-header__brand" href="index.html">Pekka Toppi</a>
+    <button
+      class="mobile-header__menu-btn"
+      id="menu-btn"
+      aria-controls="mobile-nav"
+      aria-expanded="false"
+    >Menu</button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary">
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="index.html#work">Work</a></li>
+      <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
+      <li><a class="mobile-nav__link" href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- CASE HEADER -->
+    <header class="case-header">
+      <span class="section-label case-header__label">Case Study</span>
+      <h1 class="case-header__heading">Replaced three legacy dealer platforms with one flexible SaaS — by betting against rigid workflows</h1>
+      <div class="case-header__meta">Alma · Design lead · 2023–present · In production</div>
+    </header>
+
+    <!-- SUMMARY BOX -->
+    <section class="summary-box-wrap" aria-label="Case summary">
+      <div class="summary-box">
+        <div class="summary-box__row">
+          <div class="summary-box__label">Problem</div>
+          <div class="summary-box__value">Three bespoke legacy systems, hundreds of dealerships, no two working alike — and a domain thick with VAT, contract law, and financing rules.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">My contribution</div>
+          <div class="summary-box__value">Design lead. Rebuilt an early-stage project into the shipped product: PRDs and business definitions, design language, essentially every view.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">What changed</div>
+          <div class="summary-box__value">Reps now build deals in whatever order the sale actually takes. Managers oversee through visible activity instead of enforced process. Dealerships have left competing platforms to adopt it.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SNAPSHOT + FIRST DIAGRAM -->
+    <section class="snapshot-section" aria-label="Project snapshot">
+      <p class="snapshot-row"><strong>Role:</strong> Design lead. Owned product definition, design language, and essentially every view. Line-managed one UX designer, who joined as a junior and grew to intermediate under my mentoring.</p>
+      <p class="snapshot-row"><strong>Scope:</strong> 3 legacy systems, 400+ dealerships, single-location lots to national chains. Team of ~11: product owner, 2 designers, lead architect, 5 senior engineers, 2 QA.</p>
+      <p class="snapshot-row"><strong>Status:</strong> Three years, ongoing. Now in production. Alma's largest development undertaking to date.</p>
+      <p class="snapshot-row"><strong>The difficulty:</strong> Vehicle retail is dense with regulation. Every dealership works differently. And the domain's strange-looking practices usually exist for good reasons.</p>
+
+      <figure class="diagram">
+        <div class="diagram__frame">
+          <span class="diagram__placeholder-text">Diagram — "The trade workspace", 16:9</span>
+        </div>
+        <figcaption class="diagram__caption">No fixed sequence. A rep builds the substance of the deal in whatever order the situation demands — walk-in cash sale or six-week negotiation — and generates the paperwork when the deal is ready.</figcaption>
+      </figure>
+    </section>
+
+    <!-- THE BET -->
+    <section class="case-section" aria-labelledby="bet-heading">
+      <h2 class="case-section__heading" id="bet-heading">The bet</h2>
+      <div class="case-section__body">
+        <p>Three legacy platforms, each tailored over years to specific clients, served 400+ Finnish dealerships. The brief: replace all three with one SaaS.</p>
+        <p>But vehicle sales resists one-size-fits-all. A walk-in cash trade and a multi-week email negotiation are different shapes entirely. A one-location dealer and a national chain work nothing alike. Reps guard their own methods.</p>
+        <p>Forcing that into a fixed sequence — <em>create offer → get approval → define financing</em> — would break the flexibility the business runs on.</p>
+      </div>
+    </section>
+
+    <!-- CATCH EMPHASIS -->
+    <section class="case-emphasis" aria-label="Key tension">
+      <div class="case-emphasis__line"></div>
+      <p class="case-emphasis__quote">The catch: total flexibility frightens managers, because in most systems process <em>is</em> the control.</p>
+    </section>
+
+    <!-- SUCCESS DEFINITION -->
+    <section class="case-definition" aria-label="Success definition">
+      <p class="case-definition__text"><strong>Success, defined up front:</strong> any dealership can run its core business its own way from day one; legitimate variation is supported rather than fought; managers keep real oversight without the system becoming a cage.</p>
+    </section>
+
+    <!-- DECISIONS -->
+    <section class="decisions" aria-labelledby="decisions-heading">
+      <span class="section-label decisions__label" id="decisions-heading">Betting Against Process</span>
+
+      <article class="decision-item" aria-labelledby="d1-heading">
+        <h3 class="decision-item__heading" id="d1-heading">1 · Killing the sales funnel</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">Every legacy system and every competitor enforced a fixed sequence of steps.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Throw it out. The trade process — the engine of the entire DMS — lets users work freely on deal content and generate artifacts (offers, contract drafts, contracts, invoices) when ready, in whatever order the real deal demands. Contacts, customers, and vehicle inventory kept equally free of imposed process.</dd>
+          <dt class="decision-grid__key">Reasoning</dt>
+          <dd class="decision-grid__value">Match how dealers actually work, not how an architect imagines they should.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">We surrendered the structure that makes software predictable, and had to earn flexibility back through oversight.</dd>
+        </dl>
+        <p class="decision-item__note">The flexible engine became the architectural backbone — every subsequent feature was built to compose with it rather than around it.</p>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d2-heading">
+        <h3 class="decision-item__heading" id="d2-heading">2 · Monitoring over rules</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">Free-form process removes the control managers rely on, and flexibility can enable sloppy or improper deals.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Don't control behaviour through the UI. Make it visible instead: heavy investment in logging, tracking, and surfacing what's actually happening.</dd>
+          <dt class="decision-grid__key">Reasoning</dt>
+          <dd class="decision-grid__value">Rigid rules never prevented bad behaviour anyway; people worked around them. Visibility catches what process only pretended to.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">Oversight now depends on people looking, not software blocking.</dd>
+        </dl>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d3-heading">
+        <h3 class="decision-item__heading" id="d3-heading">3 · Finding the truth in a specialist domain</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">People offer solutions, not problems. And in a domain this specialised, practices that look strange from outside often exist because they work.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Push past stated solutions where the underlying problem was reachable; accept a winning formula at face value where it wasn't.</dd>
+          <dt class="decision-grid__key">Reasoning</dt>
+          <dd class="decision-grid__value">Evaluated the legacy systems. Interviewed dealers. Ran contextual inquiries during the legacy products' own training-workshop days, watching how dealers described their work and reacted to features in real time. Competitor analysis. And the richest source: the customer-success team, all ex-automotive-sales, with deep domain backgrounds.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">Some conventions we left untouched without fully understanding why they worked.</dd>
+        </dl>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d4-heading">
+        <h3 class="decision-item__heading" id="d4-heading">4 · Winning three audiences at once</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">Architects resisted abandoning the funnel. Top management worried we were changing too much. Clients didn't understand the direction.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Convert rather than override. Prototypes, worked examples, and a great many deep conversations.</dd>
+          <dt class="decision-grid__key">Reasoning</dt>
+          <dd class="decision-grid__value">Argument alone moved nobody. Showing did.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">Slow. Deliberately never told anyone their old ways were wrong.</dd>
+        </dl>
+      </article>
+
+      <div class="decisions-coda">
+        <div class="decisions-coda__line"></div>
+        <p class="decisions-coda__quote">Process became a social construct the dealership discusses at a human level — not something dictated by UX patterns.</p>
+        <p class="decisions-coda__text">This is the thesis of the whole project, and what let us sell flexibility to people whose every instinct was control.</p>
+
+        <figure class="diagram">
+          <div class="diagram__frame">
+            <span class="diagram__placeholder-text">Diagram — "Monitoring and activity", 16:9</span>
+          </div>
+          <figcaption class="diagram__caption">Nothing is buried inside a rigid flow, so activity is legible at a glance.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- HOW WE WORKED -->
+    <section class="how-we-worked" aria-labelledby="how-heading">
+      <h2 class="how-we-worked__heading" id="how-heading">How we worked</h2>
+      <div class="how-we-worked__body">
+        <p>We moved from handovers to <strong>overlapping co-working</strong>, breaking down the last walls between business, design, development, and QA.</p>
+        <p>Pull a feature or customer problem from the backlog → write a high-level PRD → early AI-assisted prototyping where the UX approach needs pressure-testing → take it to engineering and QA as early as possible → finalise views, flow docs, and PRD together.</p>
+      </div>
+      <div class="how-we-worked__emphasis-line"></div>
+      <p class="how-we-worked__emphasis-quote">A handover model produces people who know their slice. Overlapping work produces people who know the feature.</p>
+
+      <figure class="diagram">
+        <div class="diagram__frame">
+          <span class="diagram__placeholder-text">Diagram — "Artifact generation", 16:9</span>
+        </div>
+        <figcaption class="diagram__caption">Flexibility upstream, rigour downstream.</figcaption>
+      </figure>
+    </section>
+
+    <!-- WHAT CHANGED -->
+    <section class="what-changed" aria-labelledby="changed-heading">
+      <h2 class="what-changed__heading" id="changed-heading">What changed</h2>
+      <div class="what-changed__body">
+        <p><strong>Dealers changed platforms.</strong> Some migrated from our own legacy systems; others left competing products to adopt it — the harder and more telling move.</p>
+        <p><strong>Reps changed how they sell.</strong> Deals are now built in the order the sale actually takes, not the order the software once demanded.</p>
+        <p><strong>Managers changed how they oversee.</strong> From enforcing process to reading activity and having the conversation.</p>
+        <p><strong>Feedback is consistent</strong> — dealers call it fresh, markedly more straightforward than what it replaced, and specifically value the flexibility.</p>
+        <p><strong>A designer grew.</strong> My direct report joined as a junior and reached intermediate over the project, mentored on work of real consequence.</p>
+        <p>I inherited roughly a quarter of the views and an outdated requirements document, and rebuilt it into the current product.</p>
+      </div>
+    </section>
+
+    <!-- WHAT I'D DO DIFFERENTLY -->
+    <section class="what-differently" aria-labelledby="differently-heading">
+      <h2 class="what-differently__heading" id="differently-heading">What I'd do differently</h2>
+      <div class="what-differently__body">
+        <p><strong>I would have shipped an MDP first.</strong> Scope and complexity almost killed this project. The right approach was a minimum deliverable product built around the core process — selling a vehicle — expanding outward from there. Instead we built the entire enterprise backbone in one pass. It worked, but the risk we carried was avoidable.</p>
+        <p><strong>The other lesson was restraint.</strong> In a domain where so much looks irrational from outside but works in practice, the senior move was knowing what <em>not</em> to redesign.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="contact__heading" id="contact-heading">I'm open to head, lead, and staff product design roles.</h2>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:pekka.toppi@gmail.com">pekka.toppi@gmail.com</a>
+        <span class="contact__phone">+358 40 577 5547</span>
+        <a class="contact__link" href="https://linkedin.com/in/pekkatoppi">LinkedIn</a>
+        <a class="contact__link" href="Pekka_Toppi_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

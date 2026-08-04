@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pekka Toppi — Product &amp; Design Leadership</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- RAIL (desktop sidebar) -->
+  <aside class="rail" aria-label="Site navigation">
+    <div class="rail__top">
+      <span class="rail__brand">Pekka Toppi</span>
+      <nav class="rail__nav" aria-label="Primary">
+        <a class="rail__nav-link" href="index.html">Home</a>
+        <a class="rail__nav-link" href="index.html#work">Work</a>
+        <a class="rail__nav-link" href="index.html#about">About</a>
+        <a class="rail__nav-link" href="cv.html">CV</a>
+      </nav>
+    </div>
+    <div class="rail__footer">
+      <div class="rail__footer-divider"></div>
+      <div class="rail__footer-contact">
+        <a href="mailto:pekka.toppi@gmail.com">pekka.toppi@gmail.com</a>
+        <span>+358 40 577 5547</span>
+        <a href="https://linkedin.com/in/pekkatoppi">LinkedIn</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MOBILE HEADER -->
+  <header class="mobile-header" aria-label="Site header">
+    <a class="mobile-header__brand" href="index.html">Pekka Toppi</a>
+    <button
+      class="mobile-header__menu-btn"
+      id="menu-btn"
+      aria-controls="mobile-nav"
+      aria-expanded="false"
+    >Menu</button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary">
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="index.html#work">Work</a></li>
+      <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
+      <li><a class="mobile-nav__link" href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <span class="hero__label">Head · Lead · Staff Product Design</span>
+      <h1 class="hero__heading">I design products and organisations.</h1>
+      <p class="hero__subheading">Complex B2B and SaaS in demanding business domains. Data-heavy interfaces and expert user flows are my Tuesday mornings.</p>
+      <div class="hero__body">
+        <p>Twenty-five years and dozens of products — telecom platforms, broadcast services, dealer systems, meat-industry ERPs, emergency care triage simulations. Along the way, a design function built from zero, an operating model that outlived me, and an AI-assisted design practice now used across a media group.</p>
+        <p>I work best where the business itself is hard: regulated, data-heavy, expert users, decades of legacy nobody dares touch. I stay in the detail because in domains like these the detail <em>is</em> the strategy — the definitions and the screens are still mine.</p>
+      </div>
+      <div class="hero__currently">
+        <span class="hero__currently-label">Currently</span>
+        <p class="hero__currently-text">Design lead on a SaaS platform replacing three legacy systems across 400+ dealerships, and one of two designers representing product design on Alma's group-wide Core AI team.</p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial" aria-label="Testimonial">
+      <div class="testimonial__line"></div>
+      <blockquote>
+        <p class="testimonial__quote">"Pekka is a brilliant creative mind, that can connect the dots of UX, Business, and Technology like only very few can."</p>
+        <footer class="testimonial__attribution">Sacha Helfenstein, Creative Director, Qvantel</footer>
+      </blockquote>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <span class="section-label work__label" id="work-heading">Selected Work</span>
+      <ul class="work-list">
+
+        <li class="work-item">
+          <h2 class="work-item__title">
+            <a class="work-item__title-link" href="case-study-automotive-dms.html">Replaced three legacy dealer platforms with one flexible SaaS — by betting against rigid workflows</a>
+          </h2>
+          <p class="work-item__hook">Vehicle retail runs on regulation, VAT rules, and contract law, and no two dealerships work alike. Rather than force one process on all of them, we made the system flexible and made behaviour visible instead.</p>
+          <div class="work-item__meta">
+            <div>Alma · Design lead, product definition, one direct report</div>
+            <div>3 legacy systems · 400+ dealerships · in production, including dealers won from competitors</div>
+            <div class="work-item__meta-emphasis">Alma's largest development undertaking to date</div>
+          </div>
+        </li>
+
+        <li class="work-item">
+          <h2 class="work-item__title"><a class="work-item__title-link" href="case-study-ai-practice.html">Built an AI design practice the whole product group actually adopted — a designer's week now takes a day or two</a></h2>
+          <p class="work-item__hook">Four generations of tooling, from throwaway Python scripts to a five-agent workflow. The hard part was never the technology; it was three groups who each had a good reason to resist it.</p>
+          <div class="work-item__meta">
+            <div>Alma · Built the tooling, led adoption, mentor other teams</div>
+            <div>Daily use across two enterprise SaaS products · reference implementation for the group</div>
+            <div class="work-item__meta-emphasis">Member of Alma's Core AI team</div>
+          </div>
+        </li>
+
+        <li class="work-item">
+          <h2 class="work-item__title"><a class="work-item__title-link" href="case-study-design-organisation.html">First design hire at a ten-person company. A 1000-person competitor acquired the design team we built.</a></h2>
+          <p class="work-item__hook">We grew design to a quarter of the company and started taking telecom contracts off far larger rivals. Qvantel — one of those rivals — bought us, and our team became their design organisation.</p>
+          <div class="work-item__meta">
+            <div>Onesto / Qvantel · Design lead, hired the whole team including the creative director</div>
+            <div>0 → 14 in design · ~12 core products · UX embedded in every product team</div>
+            <div class="work-item__meta-emphasis">Design system and design mandate still in place today</div>
+          </div>
+        </li>
+
+        <li class="work-item">
+          <h2 class="work-item__title"><a class="work-item__title-link" href="case-study-bbc.html">Rescued a gridlocked project and consolidated 10+ BBC login systems into one account</a></h2>
+          <p class="work-item__hook">One account across BBC Online, replacing a fragmented estate of memberships. The project arrived politically stalled; the technical consolidation was the easy part.</p>
+          <div class="work-item__meta">
+            <div>BBC · Interaction designer, core design team</div>
+            <div>10+ systems unified · pan-BBC reach · strict accessibility mandate</div>
+            <div class="work-item__meta-emphasis">Shipped — and still in production</div>
+          </div>
+        </li>
+
+        <li class="work-item">
+          <h2 class="work-item__title"><a class="work-item__title-link" href="case-study-telco.html">Took direct control of the front-end teams to land a rebrand and a BSS migration on a date that could not move</a></h2>
+          <p class="work-item__hook">Stores, packaging, and every digital channel relaunched on the same day — while core business systems were being replaced underneath. I ran the design and delivery of the digital half, under a deadline set by physical retail.</p>
+          <div class="work-item__meta">
+            <div>Undisclosed client · Design manager, then direct mandate over front-end delivery</div>
+            <div>300+ views · 10+ tools · immovable launch window</div>
+            <div class="work-item__meta-emphasis">Delivered on time and on scope</div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 class="about__heading" id="about-heading">About</h2>
+      <div class="about__body">
+        <p>I work in three languages.</p>
+        <p><strong>Design</strong> is my native one. <strong>Engineering</strong> I came up through — front-end, then full-stack: Java and C# as a client-side developer and software architect, LAMP work building payment gateways and single-sign-on integrations — which means I know what my decisions cost to build. It's why I could be handed direct control of a telecom's front-end teams to save a launch date, and why I build my own tooling rather than waiting for someone to ship it. <strong>Business</strong> I studied and then lived: an M.Sc. in economics with a focus on organisational theory, and twenty years since then in strategy rooms, PRDs, and business definitions.</p>
+        <p>Most designers can claim one adjacent language. The value isn't the credentials — it's that engineers stop treating design as decoration when you can talk honestly about implementation cost, and business stops treating it as a service function when you can argue in their terms.</p>
+        <p>Most of my career has been in enterprise and B2B: telecom BSS, broadcast, dealer management, industrial ERPs. These are domains where the users are experts, the rules are real, and the strange-looking practice you're tempted to redesign usually exists for a good reason. The skill is knowing what <em>not</em> to change.</p>
+      </div>
+
+      <div class="about__subsection">
+        <span class="about__subsection-label">How I work</span>
+        <div class="about__subsection-line"></div>
+        <div class="about__body">
+          <p>At Onesto and Qvantel we built an operating model we called <strong>enterprise design</strong>, on two ideas. Products should be self-steering: business, design, and technology contribute equally, and the product tells you where it needs to go — not the loudest discipline. And experience runs in layers: usability at the core, service design around it, and around that the experience of employees, support staff, and stakeholders. Support staff working against a system they hate cannot deliver good support. Ordinary enough now; distinctly uncommon in 2012.</p>
+          <p>I'm doing a version of the same thing again with AI-assisted design — building the practice, then getting people to actually use it, which is the harder half.</p>
+        </div>
+      </div>
+
+      <div class="about__subsection">
+        <span class="about__subsection-label">Now</span>
+        <div class="about__subsection-line"></div>
+        <div class="about__body">
+          <p>Design lead on a dealer management SaaS at Alma, owning product definitions and PRDs alongside UX. One of two designers representing product design on Alma's group-wide Core AI team, where I mentor other teams building their own AI-assisted workflows.</p>
+          <p>Based in Jyväskylä, Finland. I work in Finnish and English.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="contact__heading" id="contact-heading">I'm open to head, lead, and staff product design roles.</h2>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:pekka.toppi@gmail.com">pekka.toppi@gmail.com</a>
+        <span class="contact__phone">+358 40 577 5547</span>
+        <a class="contact__link" href="https://linkedin.com/in/pekkatoppi">LinkedIn</a>
+        <a class="contact__link" href="Pekka_Toppi_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

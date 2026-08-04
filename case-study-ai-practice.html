@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Design Practice — Case Study — Pekka Toppi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <aside class="rail" aria-label="Site navigation">
+    <div class="rail__top">
+      <a class="rail__brand" href="index.html">Pekka Toppi</a>
+      <nav class="rail__nav" aria-label="Primary">
+        <a class="rail__nav-link" href="index.html">Home</a>
+        <a class="rail__nav-link" href="index.html#work">Work</a>
+        <a class="rail__nav-link" href="index.html#about">About</a>
+        <a class="rail__nav-link" href="cv.html">CV</a>
+      </nav>
+    </div>
+    <div class="rail__footer">
+      <div class="rail__footer-divider"></div>
+      <div class="rail__footer-title">Case study</div>
+      <div>AI design practice</div>
+    </div>
+  </aside>
+
+  <header class="mobile-header" aria-label="Site header">
+    <a class="mobile-header__brand" href="index.html">Pekka Toppi</a>
+    <button class="mobile-header__menu-btn" id="menu-btn" aria-controls="mobile-nav" aria-expanded="false">Menu</button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary">
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="index.html#work">Work</a></li>
+      <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
+      <li><a class="mobile-nav__link" href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <header class="case-header">
+      <span class="section-label case-header__label">Case Study</span>
+      <h1 class="case-header__heading">Built an AI-assisted design practice the whole product group actually adopted</h1>
+      <div class="case-header__meta">Alma · 2024–present · A designer's week of work now takes one or two days</div>
+    </header>
+
+    <section class="summary-box-wrap" aria-label="Case summary">
+      <div class="summary-box">
+        <div class="summary-box__row">
+          <div class="summary-box__label">Problem</div>
+          <div class="summary-box__value">AI design tooling is everywhere and mostly unused. Pilots stall, adoption stays with the enthusiast, teams drift back to old habits.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">My contribution</div>
+          <div class="summary-box__value">Built the tooling across four architectural generations, led its adoption, and now mentor other teams building their own.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">What changed</div>
+          <div class="summary-box__value">A whole design and product group changed how they produce features — by choice. QA changed how they build tests. Other teams asked to build their own.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="snapshot-section" aria-label="Project snapshot">
+      <p class="snapshot-row"><strong>Role:</strong> Built the tooling and the practice around it; led adoption. Member of Alma's Core AI team, representing UX and product design alongside one other design lead — two people covering design across a conglomerate.</p>
+      <p class="snapshot-row"><strong>Scope:</strong> Daily use by design and product staff across two enterprise SaaS products. My materials serve as the worked examples other teams across the group build from.</p>
+      <p class="snapshot-row"><strong>Timeline:</strong> Mid/late 2024 → present. Four architectural generations; agentic workflow at v2.0.</p>
+      <p class="snapshot-row"><strong>Origin:</strong> Started as a sub-project of my own inside the DMS work, then outgrew it.</p>
+
+      <figure class="diagram">
+        <div class="diagram__frame">
+          <span class="diagram__placeholder-text">Diagram — "Skill architecture and evolution", 16:9</span>
+        </div>
+        <figcaption class="diagram__caption">Four generations, and where each one hit its ceiling.</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-section" aria-labelledby="bet-heading">
+      <h2 class="case-section__heading" id="bet-heading">The bet</h2>
+      <div class="case-section__body">
+        <p>Useful AI-assisted design has to be built around a specific team's real workflow, and adoption is a change-management problem, not a tooling problem. Neither half works alone — tooling nobody trusts goes unused; enthusiasm without fitting tooling goes nowhere.</p>
+      </div>
+    </section>
+
+    <section class="case-emphasis" aria-label="Key tension">
+      <div class="case-emphasis__line"></div>
+      <p class="case-emphasis__quote">The technology was never the hard part. Three separate groups each had a good reason to resist it.</p>
+    </section>
+
+    <section class="case-definition" aria-label="Success definition">
+      <p class="case-definition__text"><strong>Success, defined up front:</strong> other people using it by choice, on production work, as a normal part of how features get made.</p>
+    </section>
+
+    <section class="decisions" aria-labelledby="decisions-heading">
+      <span class="section-label decisions__label" id="decisions-heading">Four Generations and Three Kinds of Resistance</span>
+
+      <article class="decision-item" aria-labelledby="d1-heading">
+        <h3 class="decision-item__heading" id="d1-heading">1 · Rebuilt at every ceiling</h3>
+        <div class="case-section__body">
+          <p><strong>Python scripts against Azure AI APIs</strong> (mid/late 2024) — converted outdated specs and structured meeting notes into PRD candidates. Failed on: fire-and-forget black boxes, fixed steps in fixed order, slow, opaque when wrong.</p>
+          <p><strong>Custom roles</strong> — a genuine dead end. A role gives a persona, not a process. The AI kept forgetting where it was. Abandoned quickly.</p>
+          <p><strong>Claude Projects, template-driven</strong> — the first real leap; templates kept the AI on track without pre-determining every step. Failed on: the full PRD process was too much for one context. Projects were hard to share without collisions. Run several features through it and drafts pile up until both AI and user lose the thread.</p>
+          <p><strong>Skills</strong> — the project framework decomposed into small, single-purpose, shareable skills: Confluence search, uploads and updates, impact analysis, PRD creation. First version failed on skills too large, workflows too long. Fixed by decomposition. This is when it became flexible: start from any angle — new PRD, update an old one, view specs from PRD and flow, or flow from views and PRD.</p>
+          <p><strong>Agentic workflow (current, v2.0)</strong> — composes those skills into five roles: design manager, product designer, UX designer, prototype designer, design auditor. Takes a PRD draft to a working interactive prototype.</p>
+        </div>
+        <p class="decision-item__note">Every generation failed for a structural reason — rigidity, statelessness, content bloat, over-long workflows. Every fix was architectural, not prompt-tuning.</p>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d2-heading">
+        <h3 class="decision-item__heading" id="d2-heading">2 · Designers and product owners — fear of replacement</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">Product owners and designers worried AI would take too much of their work. Quieter but just as real: fear they wouldn't know how to use it.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">No argument, no mandate. Co-working sessions using the skills together, in the open, on real work.</dd>
+          <dt class="decision-grid__key">Reasoning</dt>
+          <dd class="decision-grid__value">They needed to see that decision-making and creative judgment stayed with them.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">Let each person adjust on their own schedule. Much slower than a rollout.</dd>
+        </dl>
+        <p class="decision-item__note">People adopt tools they've watched themselves stay in control of.</p>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d3-heading">
+        <h3 class="decision-item__heading" id="d3-heading">3 · QA — a legitimate technical objection</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">Moving from static layouts to interactive prototypes broke QA's AI-driven test creation. If a definitive view state isn't a discrete static view, how do you point a test-generating AI at it?</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Two fixes. Strengthen view definition and flow documents so the QA AI can source state information from them. Build parameter-driven view substates into the prototypes, directly linkable and documented in both prototypes and definition docs.</dd>
+          <dt class="decision-grid__key">Still open</dt>
+          <dd class="decision-grid__value">The most remote corner cases. Where preconditions are too complex to model in prototype flows, those states exist as standalone invocable views. Workable, not yet elegant.</dd>
+        </dl>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d4-heading">
+        <h3 class="decision-item__heading" id="d4-heading">4 · Development — my own misstep</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">What I got wrong</dt>
+          <dd class="decision-grid__value">The initial plan assumed dev-side AI flows would be in full use, so the first design skills produced documents aimed at other AIs: wordy, over-detailed, structured for machine parsing.</dd>
+          <dt class="decision-grid__key">The result</dt>
+          <dd class="decision-grid__value">Developers got specs they couldn't scan. The worst resistance in the project, and I caused it.</dd>
+          <dt class="decision-grid__key">The fix</dt>
+          <dd class="decision-grid__value">Several iterations of the PRD, view, and flow documents to reach a state where they work for humans and the AI tools consuming them.</dd>
+        </dl>
+        <p class="decision-item__note">Optimising for the machine reader broke the human one — and the humans were the ones who had to trust the output.</p>
+      </article>
+    </section>
+
+    <section class="what-changed" aria-labelledby="changed-heading">
+      <h2 class="what-changed__heading" id="changed-heading">What changed</h2>
+      <div class="what-changed__body">
+        <p><strong>Speed</strong> — work that took one designer a week now takes one to two days. Faster through the full agentic route.</p>
+        <p><strong>How the group produces features</strong> — daily use by design and product staff across two enterprise SaaS products. Not a pilot, not a personal workflow.</p>
+        <p><strong>How QA builds tests</strong> — restructured around linkable prototype substates and strengthened definition docs.</p>
+        <p><strong>Beyond my own work</strong> — what began as a sub-project is now used across several projects. I sit on Alma's Core AI team as one of two representing product design across the group's companies, and other teams build their own workflows from my materials.</p>
+        <p>The proof isn't the architecture. It's that other people chose to keep using it — and then asked to build their own.</p>
+      </div>
+    </section>
+
+    <section class="what-differently" aria-labelledby="differently-heading">
+      <h2 class="what-differently__heading" id="differently-heading">What I'd do differently</h2>
+      <div class="what-differently__body">
+        <p><strong>I optimised for the wrong reader.</strong> Building documentation for AI consumption before the humans were on board created exactly the resistance I could least afford, from the group whose trust mattered most.</p>
+        <p><strong>And every generation failed for a reason I could have anticipated</strong> by asking: what happens when ten people use this on twenty features? Scripts, roles, and projects each worked fine for one person on one problem. What made the skills generation stick was designing for sharing from the outset — the same lesson I learned scaling the enterprise design model years earlier, arriving in new clothes.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="contact__heading" id="contact-heading">I'm open to head, lead, and staff product design roles.</h2>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:pekka.toppi@gmail.com">pekka.toppi@gmail.com</a>
+        <span class="contact__phone">+358 40 577 5547</span>
+        <a class="contact__link" href="https://linkedin.com/in/pekkatoppi">LinkedIn</a>
+        <a class="contact__link" href="Pekka_Toppi_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

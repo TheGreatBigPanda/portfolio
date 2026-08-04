@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Organisation — Case Study — Pekka Toppi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <aside class="rail" aria-label="Site navigation">
+    <div class="rail__top">
+      <a class="rail__brand" href="index.html">Pekka Toppi</a>
+      <nav class="rail__nav" aria-label="Primary">
+        <a class="rail__nav-link" href="index.html">Home</a>
+        <a class="rail__nav-link" href="index.html#work">Work</a>
+        <a class="rail__nav-link" href="index.html#about">About</a>
+        <a class="rail__nav-link" href="cv.html">CV</a>
+      </nav>
+    </div>
+    <div class="rail__footer">
+      <div class="rail__footer-divider"></div>
+      <div class="rail__footer-title">Case study</div>
+      <div>Design organisation</div>
+    </div>
+  </aside>
+
+  <header class="mobile-header" aria-label="Site header">
+    <a class="mobile-header__brand" href="index.html">Pekka Toppi</a>
+    <button class="mobile-header__menu-btn" id="menu-btn" aria-controls="mobile-nav" aria-expanded="false">Menu</button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary">
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="index.html#work">Work</a></li>
+      <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
+      <li><a class="mobile-nav__link" href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <header class="case-header">
+      <span class="section-label case-header__label">Case Study</span>
+      <h1 class="case-header__heading">First design hire at a ten-person company. A 1000-person competitor acquired the design team we built.</h1>
+      <div class="case-header__meta">Onesto → Qvantel · Design lead · 2011–2016</div>
+    </header>
+
+    <section class="summary-box-wrap" aria-label="Case summary">
+      <div class="summary-box">
+        <div class="summary-box__row">
+          <div class="summary-box__label">Problem</div>
+          <div class="summary-box__value">A small company with no design function, competing for telecom IT contracts against large, well-resourced incumbents.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">My contribution</div>
+          <div class="summary-box__value">First design hire → design lead. Headhunted and hired the entire team including the creative director. Built the operating model.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">What changed</div>
+          <div class="summary-box__value">Design became the reason the company won work. Qvantel acquired it, UX became a standing role in every product team, and the design system is still in place a decade later.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="snapshot-section" aria-label="Project snapshot">
+      <p class="snapshot-row"><strong>Role:</strong> First design hire (2011) → design lead. Held design and content leadership; co-led design strategy with the creative director, who took line management.</p>
+      <p class="snapshot-row"><strong>Scale built:</strong> 0 → 5 in design at Onesto, roughly a quarter of a ~20-person company. Post-acquisition the team became Qvantel's central design organisation, growing to 14 and covering ~12 core products in a ~1000-person company.</p>
+      <p class="snapshot-row"><strong>Matrix reach:</strong> Qvantel's existing customer-team designers stayed in their own management structure but received our full support and mentoring. Influence past the reporting line.</p>
+      <p class="snapshot-row"><strong>Timeline:</strong> Onesto 2011–2015 · acquired by Qvantel 2014, fully integrated 2015 · Qvantel 2015–2016 · then continued as expert consultant.</p>
+      <p class="snapshot-row"><strong>Starting condition:</strong> No design function. Ad-hoc work by backend-focused developers who knew they couldn't build desirable products without it.</p>
+
+      <figure class="diagram">
+        <div class="diagram__frame">
+          <span class="diagram__placeholder-text">Diagram — "The enterprise design operating model", 16:9</span>
+        </div>
+        <figcaption class="diagram__caption">The product-led trio, and experience considered in concentric layers.</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-section" aria-labelledby="bet-heading">
+      <h2 class="case-section__heading" id="bet-heading">The bet</h2>
+      <div class="case-section__body">
+        <p>Telecom IT was dominated by large corporates — capable, and honestly, boring. A small company couldn't outspend them.</p>
+        <p>A quarter of headcount in design is an extreme allocation, and it was deliberate. A team that large could genuinely understand where client value lay, which produced better proposals — down to keeping an illustrator in-house so every RFQ response was the most visual, most tailored material on the table.</p>
+      </div>
+    </section>
+
+    <section class="case-emphasis" aria-label="Central thesis">
+      <div class="case-emphasis__line"></div>
+      <p class="case-emphasis__quote">So we out-thought them: over-invest in design to a degree no competitor would consider, and make it commercial differentiation rather than a service function.</p>
+    </section>
+
+    <section class="case-definition" aria-label="Success definition">
+      <p class="case-definition__text"><strong>Success, defined up front:</strong> design as the reason we won work — not decoration on top of it.</p>
+    </section>
+
+    <section class="decisions" aria-labelledby="decisions-heading">
+      <span class="section-label decisions__label" id="decisions-heading">Building the Function</span>
+
+      <article class="decision-item" aria-labelledby="d1-heading">
+        <h3 class="decision-item__heading" id="d1-heading">1 · Betting a quarter of the company on design</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">Small company, limited headcount, competing against far larger incumbents.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Allocate ~25% of the company to design, aimed at winning business rather than producing screens.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">That headcount could have gone to engineering.</dd>
+          <dt class="decision-grid__key">Outcome</dt>
+          <dd class="decision-grid__value">Won international telecom IT contracts from much larger rivals.</dd>
+        </dl>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d2-heading">
+        <h3 class="decision-item__heading" id="d2-heading">2 · Splitting leadership rather than becoming a manager</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">As the team grew, the default was for me to become its manager — and lose the hands-on work.</dd>
+          <dt class="decision-grid__key">Decision</dt>
+          <dd class="decision-grid__value">Hire a creative director and give him line management while I kept design and content leadership.</dd>
+          <dt class="decision-grid__key">Reasoning</dt>
+          <dd class="decision-grid__value">Stay close to sector-specific work where my UI and front-end background was most useful. And have a peer to think with — the best ideas come from dialogue, not solo authority.</dd>
+          <dt class="decision-grid__key">Trade-off accepted</dt>
+          <dd class="decision-grid__value">Gave up formal authority over my own team. Only works with complete trust in your co-lead.</dd>
+        </dl>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d3-heading">
+        <h3 class="decision-item__heading" id="d3-heading">3 · Merging into an acquirer</h3>
+        <dl class="decision-grid">
+          <dt class="decision-grid__key">Constraint</dt>
+          <dd class="decision-grid__value">A small company's design team absorbing into a 1000-person organisation that already had its own designers.</dd>
+          <dt class="decision-grid__key">Why it went smoothly</dt>
+          <dd class="decision-grid__value">Qvantel acquired us partly because of the design capability. We had won contracts they competed for, and clients kept asking why Qvantel couldn't produce what we had. We'd also already worked deep inside several of their key projects as outside consultants.</dd>
+          <dt class="decision-grid__key">Outcome</dt>
+          <dd class="decision-grid__value">Putting UX in every product team — an organisational change that usually meets fierce resistance — went through relatively easily.</dd>
+        </dl>
+        <p class="decision-item__note">The credibility to change how an organisation works is earned before you need it.</p>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d4-heading">
+        <h3 class="decision-item__heading" id="d4-heading">4 · Enterprise design — a model with no discipline in charge</h3>
+        <div class="case-section__body">
+          <p><strong>Product-led design.</strong> Business, design, and technology contribute equally, and the product is observed with a co-operative, impartial attitude — the product tells us where it needs to go. Not business-led, not technology-led: self-steering. Each product team paired a designer with a business architect and a solution architect, jointly responsible for holistic definition.</p>
+          <p><strong>Experience in concentric layers.</strong> Usability and UX at the core — one user, one interface. Around it, service design — the customer's total experience. Around that, enterprise experience — employees, support staff, stakeholders.</p>
+          <p><strong>The argument that sold it</strong> — support staff forced to work with one hand tied behind their back cannot deliver good support. Fix their experience and end-customer experience rises, while churn and training needs fall. Ordinary now; distinctly uncommon in 2012.</p>
+          <p><strong>Trade-off accepted</strong> — Distributing authority is uncomfortable for organisations used to a clear owner.</p>
+        </div>
+        <p class="decision-item__note">The trio model was later reused as the standard team shape across product teams rather than applied case by case.</p>
+      </article>
+    </section>
+
+    <section class="what-changed" aria-labelledby="changed-heading">
+      <h2 class="what-changed__heading" id="changed-heading">What changed</h2>
+      <div class="what-changed__body">
+        <p><strong>The company changed how it competed.</strong> Design became the differentiator that let a small firm win international telecom contracts against much larger competitors — and a direct factor in Qvantel's decision to acquire.</p>
+        <p><strong>Qvantel changed how it built products.</strong> UX became a standing role in every product team — a permanent structural change, not a project.</p>
+        <p><strong>Designers changed level.</strong> Most of the team now hold leadership positions elsewhere; many stepped from mid/senior to lead while on the team. The outcome I'd point to first.</p>
+        <p><strong>It outlasted me.</strong> The team was scaled back during the lean COVID years — years after I left — but the emphasis on design and the design system remain in place as Qvantel grows again.</p>
+        <p>The function outlived the people who built it. That's the real test of an organisational design.</p>
+      </div>
+    </section>
+
+    <section class="what-differently" aria-labelledby="differently-heading">
+      <h2 class="what-differently__heading" id="differently-heading">What I'd do differently</h2>
+      <div class="what-differently__body">
+        <p><strong>I underestimated how much enterprise design's success depended on team size rather than the model itself.</strong> Five people working like a finely tuned clock had seamless handovers, near-instant feedback, and shared context that let a high-level concept be understood rather than specified. We were hyper-agile because we barely needed to write anything down.</p>
+        <p>Scaling across Qvantel product teams without that coupling exposed the assumption immediately. Designs perfectly legible inside our own team were misread elsewhere and left far too much room for interpretation.</p>
+        <p><strong>The fix was the formality I'd been able to skip.</strong> Much heavier documentation. Business analysts became critical — they owned the connective documentation bridging design and implementation, a role Onesto never needed because designers and business-oriented solution architects carried that knowledge themselves. We also pulled QA into an earlier feedback loop, where writing test cases ahead of development caught our omissions before they reached engineering.</p>
+        <p>What feels like bureaucracy at five people is load-bearing structure at fifty.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="contact__heading" id="contact-heading">I'm open to head, lead, and staff product design roles.</h2>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:pekka.toppi@gmail.com">pekka.toppi@gmail.com</a>
+        <span class="contact__phone">+358 40 577 5547</span>
+        <a class="contact__link" href="https://linkedin.com/in/pekkatoppi">LinkedIn</a>
+        <a class="contact__link" href="Pekka_Toppi_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
