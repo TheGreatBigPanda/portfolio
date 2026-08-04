@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Automotive DMS — Case Study — Pekka Toppi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Public+Sans:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+---
+layout: default
+title: Automotive DMS — Case Study — Pekka Toppi
+---
 
-  <!-- RAIL (desktop sidebar) -->
   <aside class="rail" aria-label="Site navigation">
     <div class="rail__top">
       <a class="rail__brand" href="index.html">Pekka Toppi</a>
@@ -29,18 +20,11 @@
     </div>
   </aside>
 
-  <!-- MOBILE HEADER -->
   <header class="mobile-header" aria-label="Site header">
     <a class="mobile-header__brand" href="index.html">Pekka Toppi</a>
-    <button
-      class="mobile-header__menu-btn"
-      id="menu-btn"
-      aria-controls="mobile-nav"
-      aria-expanded="false"
-    >Menu</button>
+    <button class="mobile-header__menu-btn" id="menu-btn" aria-controls="mobile-nav" aria-expanded="false">Menu</button>
   </header>
 
-  <!-- MOBILE NAV -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Primary">
     <ul class="mobile-nav__list">
       <li><a class="mobile-nav__link" href="index.html">Home</a></li>
@@ -50,17 +34,14 @@
     </ul>
   </nav>
 
-  <!-- MAIN -->
   <main class="main">
 
-    <!-- CASE HEADER -->
     <header class="case-header">
       <span class="section-label case-header__label">Case Study</span>
       <h1 class="case-header__heading">Replaced three legacy dealer platforms with one flexible SaaS — by betting against rigid workflows</h1>
       <div class="case-header__meta">Alma · Design lead · 2023–present · In production</div>
     </header>
 
-    <!-- SUMMARY BOX -->
     <section class="summary-box-wrap" aria-label="Case summary">
       <div class="summary-box">
         <div class="summary-box__row">
@@ -78,7 +59,6 @@
       </div>
     </section>
 
-    <!-- SNAPSHOT + FIRST DIAGRAM -->
     <section class="snapshot-section" aria-label="Project snapshot">
       <p class="snapshot-row"><strong>Role:</strong> Design lead. Owned product definition, design language, and essentially every view. Line-managed one UX designer, who joined as a junior and grew to intermediate under my mentoring.</p>
       <p class="snapshot-row"><strong>Scope:</strong> 3 legacy systems, 400+ dealerships, single-location lots to national chains. Team of ~11: product owner, 2 designers, lead architect, 5 senior engineers, 2 QA.</p>
@@ -93,7 +73,6 @@
       </figure>
     </section>
 
-    <!-- THE BET -->
     <section class="case-section" aria-labelledby="bet-heading">
       <h2 class="case-section__heading" id="bet-heading">The bet</h2>
       <div class="case-section__body">
@@ -103,18 +82,15 @@
       </div>
     </section>
 
-    <!-- CATCH EMPHASIS -->
     <section class="case-emphasis" aria-label="Key tension">
       <div class="case-emphasis__line"></div>
       <p class="case-emphasis__quote">The catch: total flexibility frightens managers, because in most systems process <em>is</em> the control.</p>
     </section>
 
-    <!-- SUCCESS DEFINITION -->
     <section class="case-definition" aria-label="Success definition">
       <p class="case-definition__text"><strong>Success, defined up front:</strong> any dealership can run its core business its own way from day one; legitimate variation is supported rather than fought; managers keep real oversight without the system becoming a cage.</p>
     </section>
 
-    <!-- DECISIONS -->
     <section class="decisions" aria-labelledby="decisions-heading">
       <span class="section-label decisions__label" id="decisions-heading">Betting Against Process</span>
 
@@ -189,7 +165,6 @@
       </div>
     </section>
 
-    <!-- HOW WE WORKED -->
     <section class="how-we-worked" aria-labelledby="how-heading">
       <h2 class="how-we-worked__heading" id="how-heading">How we worked</h2>
       <div class="how-we-worked__body">
@@ -207,7 +182,6 @@
       </figure>
     </section>
 
-    <!-- WHAT CHANGED -->
     <section class="what-changed" aria-labelledby="changed-heading">
       <h2 class="what-changed__heading" id="changed-heading">What changed</h2>
       <div class="what-changed__body">
@@ -220,7 +194,6 @@
       </div>
     </section>
 
-    <!-- WHAT I'D DO DIFFERENTLY -->
     <section class="what-differently" aria-labelledby="differently-heading">
       <h2 class="what-differently__heading" id="differently-heading">What I'd do differently</h2>
       <div class="what-differently__body">
@@ -229,7 +202,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="contact-heading">
       <h2 class="contact__heading" id="contact-heading">I'm open to head, lead, and staff product design roles.</h2>
       <div class="contact__links">
@@ -241,7 +213,3 @@
     </section>
 
   </main>
-
-  <script src="js/nav.js" defer></script>
-</body>
-</html>
