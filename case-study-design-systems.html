@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Systems — Case Study — Pekka Toppi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <aside class="rail" aria-label="Site navigation">
+    <div class="rail__top">
+      <a class="rail__brand" href="index.html">Pekka Toppi</a>
+      <nav class="rail__nav" aria-label="Primary">
+        <a class="rail__nav-link" href="index.html">Home</a>
+        <a class="rail__nav-link" href="index.html#work">Work</a>
+        <a class="rail__nav-link" href="index.html#about">About</a>
+        <a class="rail__nav-link" href="cv.html">CV</a>
+      </nav>
+    </div>
+    <div class="rail__footer">
+      <div class="rail__footer-divider"></div>
+      <div class="rail__footer-title">Case study</div>
+      <div>Design systems</div>
+    </div>
+  </aside>
+
+  <header class="mobile-header" aria-label="Site header">
+    <a class="mobile-header__brand" href="index.html">Pekka Toppi</a>
+    <button class="mobile-header__menu-btn" id="menu-btn" aria-controls="mobile-nav" aria-expanded="false">Menu</button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Primary">
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="index.html#work">Work</a></li>
+      <li><a class="mobile-nav__link" href="index.html#about">About</a></li>
+      <li><a class="mobile-nav__link" href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <header class="case-header">
+      <span class="section-label case-header__label">Case Study</span>
+      <h1 class="case-header__heading">Five design systems, five different answers</h1>
+      <div class="case-header__meta">Consulting, Qvantel, Alma · 2016–present · Creator or owner on all five</div>
+    </header>
+
+    <section class="summary-box-wrap" aria-label="Case summary">
+      <div class="summary-box">
+        <div class="summary-box__row">
+          <div class="summary-box__label">Problem</div>
+          <div class="summary-box__value">A design system is usually treated as a house style: one set of components, applied everywhere. Five products across five domains showed me that's the wrong model.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">My contribution</div>
+          <div class="summary-box__value">Built or owned five systems. Two on MUI, one from scratch at enterprise scale, three as a consultant. Currently design system owner at Alma.</div>
+        </div>
+        <div class="summary-box__row">
+          <div class="summary-box__label">What changed</div>
+          <div class="summary-box__value">Each system solved a different problem, so each looks and behaves differently. The consistent part is the method, not the output.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="snapshot-section" aria-label="Project snapshot">
+      <p class="snapshot-row"><strong>Role:</strong> Creator or owner on all five. Currently design system owner for a dealer management platform, working alongside the lead front-end engineer.</p>
+      <p class="snapshot-row"><strong>Span:</strong> Enterprise telecom, three consulting engagements, one current platform.</p>
+      <p class="snapshot-row"><strong>Technologies:</strong> Two built on Material UI against React MUI front ends. One current system maintained in two forms: an annotated Figma library, and a machine-readable version AI tooling builds against directly.</p>
+    </section>
+
+    <section class="case-emphasis" aria-label="Central thesis">
+      <div class="case-emphasis__line"></div>
+      <p class="case-emphasis__quote">A design system is not a house style. It's an answer to a specific product's problem, and the answers should look different.</p>
+    </section>
+
+    <section class="case-section" aria-labelledby="argument-heading">
+      <h2 class="case-section__heading" id="argument-heading">The argument</h2>
+      <div class="case-section__body">
+        <p>Most design system work is described in terms of maturity: how many components, how well documented, how widely adopted. Useful, but it skips the interesting question, which is what the system is <em>for</em> in this particular product.</p>
+        <p>Five systems, five genuinely different constraints, five different shapes. The method carried over. The output didn't.</p>
+      </div>
+    </section>
+
+    <section class="decisions" aria-labelledby="decisions-heading">
+      <span class="section-label decisions__label" id="decisions-heading">Five Problems</span>
+
+      <article class="decision-item" aria-labelledby="d1-heading">
+        <h3 class="decision-item__heading" id="d1-heading">1 · Investment project management — density without dullness</h3>
+        <div class="case-section__body">
+          <p><strong>The constraint.</strong> Enormous data density, and a client who needed the product to look modern and striking rather than like a spreadsheet with ambitions.</p>
+          <p><strong>The answer.</strong> An extremely tight system that used relatively heavy contrast between elements to hold structure. Contrast did the work that whitespace usually does, so views could stay dense without turning into an undifferentiated grid.</p>
+          <p><strong>What it taught me.</strong> Density and visual quality are not opposed. They're opposed if you only have spacing to separate things with.</p>
+        </div>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d2-heading">
+        <h3 class="decision-item__heading" id="d2-heading">2 · Healthcare triage simulation — a system designed to recede</h3>
+        <div class="case-section__body">
+          <p><strong>The constraint.</strong> The product generated simulations, and those simulations were the reason anyone opened it. The interface around them had to feel clinical and stay out of the way.</p>
+          <p><strong>The answer.</strong> A deliberately recessive system. We also tuned the simulation visuals to sit inside the design language rather than beside it, but always so the simulation held the view.</p>
+          <p><strong>What it taught me.</strong> Sometimes a design system's job is to be unnoticeable. That's harder than making one that announces itself, and it's a different success criterion entirely.</p>
+        </div>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d3-heading">
+        <h3 class="decision-item__heading" id="d3-heading">3 · Customer analytics — patterns for reading data</h3>
+        <div class="case-section__body">
+          <p><strong>The constraint.</strong> An AI-driven customer communications analytics product, dashboard-heavy, where most of the real design problem was data visualisation rather than layout.</p>
+          <p><strong>The answer.</strong> Built on Material UI, with the majority of the system work going into visualisation patterns: how findings are represented, compared, and made scannable at different levels of detail.</p>
+          <p><strong>What it taught me.</strong> In a data product, the visualisation patterns <em>are</em> the design system. Buttons and forms are the easy part.</p>
+        </div>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d4-heading">
+        <h3 class="decision-item__heading" id="d4-heading">4 · Telecom BSS — a system as a quality argument</h3>
+        <div class="case-section__body">
+          <p><strong>The constraint.</strong> A 1000-person company, around 12 core products, and no shared system. I built the company's first.</p>
+          <p><strong>The answer.</strong> Getting it resourced took two arguments. For the business: our rarely-used specialist tools looking as good as our flagships would say something real about us, that nothing here is treated as trivial. For engineering: the system removed pixel-level round trips they disliked, and let them push their own ideas without booking a designer first, because anything they built would look credible enough to show a PO immediately.</p>
+          <p><strong>What happened.</strong> Adopted across all new products, and still in place a decade later.</p>
+          <p><strong>What it taught me.</strong> Adoption is a separate discipline from construction, and the arguments that work are the ones aimed at what each group already wants.</p>
+        </div>
+      </article>
+
+      <article class="decision-item" aria-labelledby="d5-heading">
+        <h3 class="decision-item__heading" id="d5-heading">5 · Dealer management — a system built for two readers</h3>
+        <div class="case-section__body">
+          <p><strong>The constraint.</strong> Users migrating from legacy systems where a spare white pixel was considered waste, a React MUI front end, and AI tooling that needed to produce shippable work rather than plausible-looking work.</p>
+          <p><strong>The answer.</strong> Built on Material UI, customised heavily. Spacing tightened toward efficiency without losing legibility — a decision I've had to justify more than once. MUI's two-colour model overloaded to carry three, adding brand alongside primary and secondary. Dynamic components for core entities: a vehicle, customer or trade case renders by context, from full focus page down to cards, list rows and dropdown items, so one entity has one definition across every surface.</p>
+          <p>And the system exists twice: an annotated Figma library, and a machine-readable version that Claude Design and Claude Code build against directly, with skills mapping it to the front-end component library.</p>
+          <p><strong>What it taught me.</strong> Once the system is machine-readable, the tools change places. Figma stopped being where I explore and became where decisions are documented and versioned. Exploration happens through AI-assisted channels; Figma holds the resolved outcome.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="case-section" aria-labelledby="how-heading">
+      <h2 class="case-section__heading" id="how-heading">How I run one</h2>
+      <div class="case-section__body">
+        <p>The method matured over the five, and the current system is the most controlled. But the consulting systems taught me the more useful lesson, because I was never going to be their long-term owner.</p>
+        <p>A system that only lives in its author's head dies when the author leaves. On a consulting contract that isn't a risk, it's a certainty. So the work wasn't only building the system — it was making sure the engineers and founders I built it with understood <em>why</em> it did what it did. Without that shared reasoning, the system drifts the moment I'm out of the room and every new case gets solved from scratch.</p>
+        <p>That pushed everything toward explaining rather than specifying. On the current system, where I am the long-term owner, I've kept the same instinct and taken it further.</p>
+        <p><strong>Patterns are documented as features.</strong> Each core pattern has a PRD explaining the business reason behind it, plus view and flow documents holding the detail. Not a component with a name, but a decision with a rationale.</p>
+        <p><strong>Every change is logged, including the ones we don't make.</strong> A decision log records what changed and what we deliberately left alone, so the system has a history rather than just a current state.</p>
+        <p><strong>Contribution is low-hierarchy.</strong> If an engineer or someone in QA hits a gap, we work it through together with the front-end lead, log the decision, then version the library and the supporting documents.</p>
+        <p><strong>Built with engineering, not handed to it.</strong> The current system is built alongside our lead front-end engineer, on the component library the product actually uses.</p>
+      </div>
+    </section>
+
+    <section class="what-changed" aria-labelledby="changed-heading">
+      <h2 class="what-changed__heading" id="changed-heading">What changed</h2>
+      <div class="what-changed__body">
+        <p><strong>The systems don't look alike, and that's the point.</strong> A recessive clinical system and a high-contrast dense one are not the same system with different colours. Each answered its own product.</p>
+        <p><strong>One of them outlived its company's memory of building it.</strong> Qvantel's is still in place a decade on.</p>
+        <p><strong>The current system changed how I work.</strong> Machine-readable output means AI-generated work arrives using the same components, spacing and tokens an engineer would reach for — the difference between a prototype and a demo.</p>
+      </div>
+    </section>
+
+    <section class="what-differently" aria-labelledby="differently-heading">
+      <h2 class="what-differently__heading" id="differently-heading">What I'd do differently</h2>
+      <div class="what-differently__body">
+        <p>For a long time I treated the system as the deliverable and the explaining as the follow-up. It's the other way round. What I'd want now, on any system I build, is that the people I built it with could defend its decisions without me in the room.</p>
+        <p>Building the system is the smaller half.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="contact__heading" id="contact-heading">I'm open to head, lead, and staff product design roles.</h2>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:pekka.toppi@gmail.com">pekka.toppi@gmail.com</a>
+        <span class="contact__phone">+358 40 577 5547</span>
+        <a class="contact__link" href="https://linkedin.com/in/pekkatoppi">LinkedIn</a>
+        <a class="contact__link" href="Pekka_Toppi_CV.pdf">Download CV (PDF)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
